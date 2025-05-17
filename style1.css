@@ -1,0 +1,79 @@
+/* Common */
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1400px;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  width: 100px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-radius: 25px;
+  background: rgba(135, 207, 235, 0.575);
+  padding: 5px 10px;
+}
+
+/* Header */
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav a {
+  position: relative;
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 8px 21px;
+  font-weight: 600;
+}
+
+.nav li.active a,
+.nav a:hover {
+  color: skyblue;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.nav a:active {
+  color: deepskyblue; /* Màu chữ thay đổi khi nhấn */
+  text-shadow: 2px 2px 5px rgba(30, 144, 255, 0.8); /* Hiệu ứng bóng chữ */
+  transform: scale(0.98); /* Thu nhỏ nhẹ liên kết */
+  transition: all 0.1s ease; /* Hiệu ứng nhanh khi nhấn */
+}
+
+.body .logo {
+  width: 170px;
+  padding: 9px 25px;
+  box-shadow: 0 0 15px rgba(135, 206, 250, 0.8); /* Hiệu ứng phát sáng */
+  transition: box-shadow 0.3s ease; /* Hiệu ứng mượt khi hover */
+}
+
+.body .logo:hover {
+  box-shadow: 0 0 30px rgba(135, 206, 250, 1); /* Tăng độ sáng khi hover */
+}
+
+.btn:hover {
+  background: rgba(135, 206, 250, 1); /* Tăng độ sáng của nền */
+  color: black; /* Thay đổi màu chữ */
+  box-shadow: 0 0 15px rgba(135, 206, 250, 0.8); /* Thêm hiệu ứng phát sáng */
+  transition: all 0.3s ease; /* Hiệu ứng mượt */
+  font-weight: 600;
+}
